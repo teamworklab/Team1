@@ -1,0 +1,169 @@
+/*
+ * Style twaks
+ * --------------------------------------------------
+ */
+body {
+  padding-top: 70px;
+}
+
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#conf-list .row {
+	margin-bottom: 30px;
+}
+
+.schedule-table th {
+	text-align: center;
+}
+
+td.slot {
+	text-align: center;
+}
+
+td.event {
+	background-color: #ededed;
+}
+
+td.time {
+	text-align: left;
+	width: 80px;
+}
+
+#add-category-btn {
+	margin: 7px 0 0 5px;
+}
+
+.category-option {
+	margin-bottom: 7px;
+}
+
+.del-category-btn {
+	margin-left: 5px;
+}
+
+.attachment-content {
+	padding-left: 10px;
+}
+
+.profile-content {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+
+.criteria-option {
+	width: 200px;
+	margin-bottom: 5px;
+}
+
+.criteria-container {
+	padding-bottom: 5px;
+}
+
+.add-criteria-link {
+  margin-left: 5px;
+}
+
+#total-conference-display {
+  margin-bottom: 20px;
+}
+
+#total-conference-display h2 {
+  display: inline-block;
+}
+
+.criteria-header {
+    margin-bottom: 10px;
+}
+
+.publication-criteria {
+  margin-right: 15px;
+}
+
+.signup-header {
+  margin-bottom: 20px;
+}
+
+.user-overview-content {
+  margin-bottom: 30px;
+}
+
+.add-profile-form {
+  margin-bottom: 30px;
+}
+
+#address-form, #conf-submit-container {
+  display: none;
+}
+
+#topic-detail-container {
+  display: none; 
+  margin-top: 10px
+}
+
+.topic-title {
+  color: #000000
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
